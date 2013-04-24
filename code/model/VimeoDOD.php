@@ -43,10 +43,9 @@ class VimeoDOD extends DataObjectDecorator {
 
 	function VimeosInThisSection(){
 		return DataObject::get("Page", "
-			\"ParentID\" IN(".$this->owner->ParentID.", ".$this->owner->ID.") AND
+			\"ParentID\" IN(".($this->owner->ParentID-0).", ".($this->owner->ID - 0).") AND
 			\"VimeoDataObjectID\" > 0 AND
-			\"ShowInSearch\" = 1
-			"
+			\"ShowInSearch\" = 1"
 		);
 	}
 
