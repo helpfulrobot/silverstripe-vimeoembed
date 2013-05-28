@@ -7,7 +7,7 @@
 <li>
 	<a href="$Link" title="$VimeoDataObject.Title.ATT">
 		<% control VimeoDataObject %>
-		<img src="$IconLink.URL" alt="$Title.ATT" width="200" />
+		<img src="$IconLink.URL" alt="$Title.ATT" width="100" />
 		<span>$Title</span>
 		<% end_control %>
 	</a>
